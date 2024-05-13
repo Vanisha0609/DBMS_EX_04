@@ -99,7 +99,7 @@ GROUP BY DoctorID;
 ![image](https://github.com/Vanisha0609/DBMS_EX_04/assets/119104009/f43fdd87-c78c-47e1-8c09-9ffccb1314c3)
 
 ## QUESTION 2 :
-![image](https://github.com/Vanisha0609/DBMS_EX_04/assets/119104009/f3ee451c-0d8c-4075-9629-00efd2d374de)
+![image](https://github.com/Vanisha0609/DBMS_EX_04/assets/119104009/45d55193-74d7-4b83-ace6-00be3fcc70f3)
 
 ### QUERY:
 ```
@@ -111,8 +111,7 @@ GROUP BY Medication;
 ![image](https://github.com/Vanisha0609/DBMS_EX_04/assets/119104009/0d00762a-d796-4d56-8f95-381707c6c171)
 
 ## QUESTION 3 :
-![image](https://github.com/Vanisha0609/DBMS_EX_04/assets/119104009/fd1209ad-227a-45b7-8f57-6eb33bc4ad0a)
-
+![image](https://github.com/Vanisha0609/DBMS_EX_04/assets/119104009/0722d5e1-071a-4702-84f4-8c9d8d0e6068)
 
 ### QUERY:
 ```
@@ -136,7 +135,9 @@ FROM fruits;
 ![image](https://github.com/Vanisha0609/DBMS_EX_04/assets/119104009/a617929a-3fc2-4344-8931-3c852b8cd0f0)
 
 ## QUESTION 5 :
-![image](https://github.com/Vanisha0609/DBMS_EX_04/assets/119104009/fe287cd5-5c43-4e76-a21c-674576f528d2)
+
+![image](https://github.com/Vanisha0609/DBMS_EX_04/assets/119104009/2123e0fd-8a00-43b3-a048-9b5ff65a8472)
+
 
 ### QUERY:
 ```
@@ -148,8 +149,7 @@ FROM customer;
 
 
 ## QUESTION 6 :
-![image](https://github.com/Vanisha0609/DBMS_EX_04/assets/119104009/a93445fb-5e7e-453c-acf2-639565caf05d)
-
+![image](https://github.com/Vanisha0609/DBMS_EX_04/assets/119104009/403c9bf4-0d3f-472e-a77c-648b745a6dd0)
 ### QUERY:
 ```
 SELECT COUNT(DISTINCT salesman_id) AS COUNT
@@ -159,7 +159,7 @@ FROM orders;
 ![image](https://github.com/Vanisha0609/DBMS_EX_04/assets/119104009/28c2c62f-f0aa-487e-8375-5adc382c4ec3)
 
 ## QUESTION 7 :
-![image](https://github.com/Vanisha0609/DBMS_EX_04/assets/119104009/6c5cb5ec-aa88-4e13-a998-454d2d2e989c)
+![image](https://github.com/Vanisha0609/DBMS_EX_04/assets/119104009/aac00c6a-e8cf-4449-b19e-b69ee31f0311)
 
 ### QUERY:
 ```
@@ -182,8 +182,7 @@ GROUP BY category_id;
 ![image](https://github.com/Vanisha0609/DBMS_EX_04/assets/119104009/b5b021b4-5bf3-468b-8515-21afa72aba74)
 
 ## QUESTION 9 :
-![image](https://github.com/Mena-Rossini/DBMS_EX_04/assets/102855266/4402ff66-fcfd-4092-af30-57fc37d4e0cb)
-
+![image](https://github.com/Vanisha0609/DBMS_EX_04/assets/119104009/57d4768e-3a39-4680-8191-697c87d2b71a)
 ### QUERY:
 ```
 SELECT (age/5)*5 AS age_group, MIN(age) AS `MIN(age)`
