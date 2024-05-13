@@ -87,46 +87,45 @@ ORDER BY column_name(s);
 ```
 # MODULE:
 ## QUESTION 1 :
-![image](https://github.com/Mena-Rossini/DBMS_EX_04/assets/102855266/12a7cd35-3740-4850-8815-a99d1c50b8fe)
+![image](https://github.com/Vanisha0609/DBMS_EX_04/assets/119104009/4eaf0c54-2e87-4e6b-8701-814863b696ac)
 
 ### QUERY:
 ```
-SELECT InsuranceCompany, AVG((EndDate) - (StartDate)) AS AvgCoverageDurationDays
-FROM Insurance
-GROUP BY InsuranceCompany;
-
+SELECT DoctorID, COUNT(*) AS TotalPrescriptions
+FROM Prescriptions
+GROUP BY DoctorID;
 ```
 ### OUTPUT:
-![image](https://github.com/Mena-Rossini/DBMS_EX_04/assets/102855266/b6836759-b82c-4fa0-b254-acd7fc96fb30)
+![image](https://github.com/Vanisha0609/DBMS_EX_04/assets/119104009/f43fdd87-c78c-47e1-8c09-9ffccb1314c3)
 
 ## QUESTION 2 :
-![image](https://github.com/Mena-Rossini/DBMS_EX_04/assets/102855266/f0ef827c-6278-4ba1-80d5-3093288913d8)
+![image](https://github.com/Vanisha0609/DBMS_EX_04/assets/119104009/f3ee451c-0d8c-4075-9629-00efd2d374de)
 
 ### QUERY:
 ```
-SELECT Medication, COUNT(*) AS TotalPrescriptions
+SELECT Medication,AVG(Dosage) as AvgDosage
 FROM Prescriptions
 GROUP BY Medication;
-
 ```
 ### OUTPUT:
-![image](https://github.com/Mena-Rossini/DBMS_EX_04/assets/102855266/40a875dd-6d40-434a-a93b-cbc32fe46f98)
+![image](https://github.com/Vanisha0609/DBMS_EX_04/assets/119104009/0d00762a-d796-4d56-8f95-381707c6c171)
 
 ## QUESTION 3 :
-![image](https://github.com/Mena-Rossini/DBMS_EX_04/assets/102855266/d7fc61b2-0e77-4526-b3df-5265a72d3d5c)
+![image](https://github.com/Vanisha0609/DBMS_EX_04/assets/119104009/fd1209ad-227a-45b7-8f57-6eb33bc4ad0a)
+
 
 ### QUERY:
 ```
-SELECT strftime('%Y-%m', Date) AS Month, COUNT(*) AS TotalRecords
+SELECT PatientID ,COUNT(*) AS TotalRecords
 FROM MedicalRecords
-GROUP BY strftime('%Y-%m', Date);
+GROUP BY PatientID ;
 
 ```
 ### OUTPUT:
-![image](https://github.com/Mena-Rossini/DBMS_EX_04/assets/102855266/fbf0c8c5-6dd8-45ba-9d6d-d9e2a9db518e)
+![image](https://github.com/Vanisha0609/DBMS_EX_04/assets/119104009/71e9589d-f70d-4f45-8e39-d1a45cb5ca26)
 
 ## QUESTION 4 :
-![image](https://github.com/Mena-Rossini/DBMS_EX_04/assets/102855266/0e411117-694b-4e5f-928d-975322d9bb1c)
+![image](https://github.com/Vanisha0609/DBMS_EX_04/assets/119104009/3604e10f-091f-4ee5-839c-4fe53c6c2632)
 
 ### QUERY:
 ```
@@ -134,10 +133,22 @@ SELECT MAX(price) - MIN(price) AS price_diff
 FROM fruits;
 ```
 ### OUTPUT:
-![image](https://github.com/Mena-Rossini/DBMS_EX_04/assets/102855266/80cd0f04-75d0-476f-b165-fa2e8a80e1e4)
+![image](https://github.com/Vanisha0609/DBMS_EX_04/assets/119104009/a617929a-3fc2-4344-8931-3c852b8cd0f0)
 
 ## QUESTION 5 :
-![image](https://github.com/Mena-Rossini/DBMS_EX_04/assets/102855266/a7a41117-f7da-45d2-89d2-6a33ab234ef8)
+![image](https://github.com/Vanisha0609/DBMS_EX_04/assets/119104009/fe287cd5-5c43-4e76-a21c-674576f528d2)
+
+### QUERY:
+```
+SELECT COUNT(*) AS COUNT
+FROM customer;
+```
+### OUTPUT:
+![image](https://github.com/Vanisha0609/DBMS_EX_04/assets/119104009/ba829c47-4d2d-425f-b67e-62e605cfd1dc)
+
+
+## QUESTION 6 :
+![image](https://github.com/Vanisha0609/DBMS_EX_04/assets/119104009/a93445fb-5e7e-453c-acf2-639565caf05d)
 
 ### QUERY:
 ```
@@ -145,43 +156,30 @@ SELECT COUNT(DISTINCT salesman_id) AS COUNT
 FROM orders;
 ```
 ### OUTPUT:
-![image](https://github.com/Mena-Rossini/DBMS_EX_04/assets/102855266/267ccbd0-adae-4523-9568-b7e20af9bc0b)
-
-## QUESTION 6 :
-![image](https://github.com/Mena-Rossini/DBMS_EX_04/assets/102855266/924d7899-23e0-44e6-96b0-63e6ffd632e8)
-
-### QUERY:
-```
-SELECT COUNT(DISTINCT city)AS unique_cities
-FROM customer;
-```
-### OUTPUT:
-![image](https://github.com/Mena-Rossini/DBMS_EX_04/assets/102855266/05f4faf7-0a8d-44c8-b937-1e3b7ff5fce4)
+![image](https://github.com/Vanisha0609/DBMS_EX_04/assets/119104009/28c2c62f-f0aa-487e-8375-5adc382c4ec3)
 
 ## QUESTION 7 :
-![image](https://github.com/Mena-Rossini/DBMS_EX_04/assets/102855266/a80921c5-bec0-4f82-a602-186133a6be2b)
+![image](https://github.com/Vanisha0609/DBMS_EX_04/assets/119104009/6c5cb5ec-aa88-4e13-a998-454d2d2e989c)
 
 ### QUERY:
 ```
-SELECT name,MAX(income) AS 'max(income)'  
-FROM employee
-WHERE city='California';
+SELECT MAX(purch_amt) AS MAXIMUM
+FROM orders;
 ```
 ### OUTPUT:
-![image](https://github.com/Mena-Rossini/DBMS_EX_04/assets/102855266/1d5043e6-839a-4900-b7fe-796d67490d75)
+![image](https://github.com/Vanisha0609/DBMS_EX_04/assets/119104009/25c30efd-41ee-48e6-a1b1-0608eed0286e)
 
 ## QUESTION 8 :
-![image](https://github.com/Mena-Rossini/DBMS_EX_04/assets/102855266/b0a3296e-8a32-478f-8be5-3b524b6e4c22)
-
+![image](https://github.com/Vanisha0609/DBMS_EX_04/assets/119104009/d41a8872-3b2f-42a9-a178-7004372aabd5)
 ### QUERY:
 ```
-SELECT age, SUM(income) AS `SUM(income)`
-FROM employee
-GROUP BY age
-HAVING SUM(income) > 1000000;
+SELECT category_id, COUNT(*) AS COUNT
+FROM products
+WHERE category_id > 2
+GROUP BY category_id;
 ```
 ### OUTPUT:
-![image](https://github.com/Mena-Rossini/DBMS_EX_04/assets/102855266/d2b8c661-8785-48aa-ad05-efa8bdd52dd4)
+![image](https://github.com/Vanisha0609/DBMS_EX_04/assets/119104009/b5b021b4-5bf3-468b-8515-21afa72aba74)
 
 ## QUESTION 9 :
 ![image](https://github.com/Mena-Rossini/DBMS_EX_04/assets/102855266/4402ff66-fcfd-4092-af30-57fc37d4e0cb)
