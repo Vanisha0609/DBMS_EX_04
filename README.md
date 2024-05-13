@@ -124,7 +124,7 @@ GROUP BY PatientID ;
 ![image](https://github.com/Vanisha0609/DBMS_EX_04/assets/119104009/71e9589d-f70d-4f45-8e39-d1a45cb5ca26)
 
 ## QUESTION 4 :
-![image](https://github.com/Vanisha0609/DBMS_EX_04/assets/119104009/3604e10f-091f-4ee5-839c-4fe53c6c2632)
+![image](https://github.com/Vanisha0609/DBMS_EX_04/assets/119104009/f0c80dbf-867d-4c9f-a6fc-f9e022b16ac3)
 
 ### QUERY:
 ```
